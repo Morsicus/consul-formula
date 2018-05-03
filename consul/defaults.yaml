@@ -18,5 +18,9 @@ consul:
     retry_join: []
     retry_interval: 30s
     datacenter: "main"
+    ca_file: ""
+    cert_file: ""
+    key_file: ""
+
   register: []
   scripts: []

@@ -22,6 +22,10 @@ consul:
       - 1.1.1.1
       - 2.2.2.2
 
+    ca_file: "/etc/consul.d/tls/ca.pem"
+    cert_file: "/etc/consul.d/tls/consul.pem"
+    key_file: "/etc/consul.d/tls/consul-key.pem"
+
   register:
     - name: Redis
       checks:
