@@ -21,6 +21,11 @@ consul:
     ca_file: ""
     cert_file: ""
     key_file: ""
+    acl_master_token: ""
+    acl_agent_token: ""
+    acl_datacenter: ""
+    acl_default_policy: ""
+    acl_down_policy: ""
 
   register: []
   scripts: []

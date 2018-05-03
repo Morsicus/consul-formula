@@ -26,6 +26,12 @@ consul:
     cert_file: "/etc/consul.d/tls/consul.pem"
     key_file: "/etc/consul.d/tls/consul-key.pem"
 
+    acl_master_token: aaaa1111-bb22-cc33-dd44-eeeeee555555
+    acl_agent_token: eeee5555-dd44-cc33-bb22-aaaaaa111111
+    acl_datacenter: eu
+    acl_default_policy: deny
+    acl_down_policy: deny
+
   register:
     - name: Redis
       checks:
